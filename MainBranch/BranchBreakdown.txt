@@ -1,0 +1,3 @@
+Branch for collaborative exercises.
+
+Please use "git pull" before pushing back to the GitHub repository. 

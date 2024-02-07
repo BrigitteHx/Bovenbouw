@@ -1,0 +1,4 @@
+Branch made to document individual exercises and to track progress along learning paths. 
+Each student has their own folder dedicated to their own files. 
+
+Please use "git pull" before pushing back to the GitHub repository. 
