@@ -6,6 +6,7 @@ Feature branch: Bedoeld voor documentatie van individuele assignments, zoals Wor
 
 Main branch: Bedoeld voor samenwerkingsopdrachten.
 
+---
 
 In de "branch breakdown" txt-bestanden staat een korte uitleg van elke branch (zoals hierboven beschreven).
 
