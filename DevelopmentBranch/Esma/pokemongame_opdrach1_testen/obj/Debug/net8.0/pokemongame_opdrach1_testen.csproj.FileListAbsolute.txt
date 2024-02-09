@@ -1,0 +1,15 @@
+C:\Users\esman\leren-programmeren\bovenbouw\DevelopmentBranch\Esma\pokemongame_opdrach1_testen\bin\Debug\net8.0\pokemongame_opdrach1_testen.exe
+C:\Users\esman\leren-programmeren\bovenbouw\DevelopmentBranch\Esma\pokemongame_opdrach1_testen\bin\Debug\net8.0\pokemongame_opdrach1_testen.deps.json
+C:\Users\esman\leren-programmeren\bovenbouw\DevelopmentBranch\Esma\pokemongame_opdrach1_testen\bin\Debug\net8.0\pokemongame_opdrach1_testen.runtimeconfig.json
+C:\Users\esman\leren-programmeren\bovenbouw\DevelopmentBranch\Esma\pokemongame_opdrach1_testen\bin\Debug\net8.0\pokemongame_opdrach1_testen.dll
+C:\Users\esman\leren-programmeren\bovenbouw\DevelopmentBranch\Esma\pokemongame_opdrach1_testen\bin\Debug\net8.0\pokemongame_opdrach1_testen.pdb
+C:\Users\esman\leren-programmeren\bovenbouw\DevelopmentBranch\Esma\pokemongame_opdrach1_testen\obj\Debug\net8.0\pokemongame_opdrach1_testen.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\esman\leren-programmeren\bovenbouw\DevelopmentBranch\Esma\pokemongame_opdrach1_testen\obj\Debug\net8.0\pokemongame_opdrach1_testen.AssemblyInfoInputs.cache
+C:\Users\esman\leren-programmeren\bovenbouw\DevelopmentBranch\Esma\pokemongame_opdrach1_testen\obj\Debug\net8.0\pokemongame_opdrach1_testen.AssemblyInfo.cs
+C:\Users\esman\leren-programmeren\bovenbouw\DevelopmentBranch\Esma\pokemongame_opdrach1_testen\obj\Debug\net8.0\pokemongame_opdrach1_testen.csproj.CoreCompileInputs.cache
+C:\Users\esman\leren-programmeren\bovenbouw\DevelopmentBranch\Esma\pokemongame_opdrach1_testen\obj\Debug\net8.0\pokemongame_opdrach1_testen.sourcelink.json
+C:\Users\esman\leren-programmeren\bovenbouw\DevelopmentBranch\Esma\pokemongame_opdrach1_testen\obj\Debug\net8.0\pokemongame_opdrach1_testen.dll
+C:\Users\esman\leren-programmeren\bovenbouw\DevelopmentBranch\Esma\pokemongame_opdrach1_testen\obj\Debug\net8.0\refint\pokemongame_opdrach1_testen.dll
+C:\Users\esman\leren-programmeren\bovenbouw\DevelopmentBranch\Esma\pokemongame_opdrach1_testen\obj\Debug\net8.0\pokemongame_opdrach1_testen.pdb
+C:\Users\esman\leren-programmeren\bovenbouw\DevelopmentBranch\Esma\pokemongame_opdrach1_testen\obj\Debug\net8.0\pokemongame_opdrach1_testen.genruntimeconfig.cache
+C:\Users\esman\leren-programmeren\bovenbouw\DevelopmentBranch\Esma\pokemongame_opdrach1_testen\obj\Debug\net8.0\ref\pokemongame_opdrach1_testen.dll
