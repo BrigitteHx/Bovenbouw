@@ -1,34 +1,19 @@
 ﻿using System;
-// Charmander class
-class Charmander
-{
-    // Fields
-    private string nickname;
-    private string strength;
-    private string weakness;
 
+class Charmander : Pokemon
+{
     // Constructor
-    public Charmander(string nickname)
+    public Charmander(string nickname) : base(nickname, "fire", "water")
     {
-        this.nickname = nickname;
-        this.strength = "fire";
-        this.weakness = "water";
     }
 
     // Method for battle cry
-    public void BattleCry()
+    public override void BattleCry()
     {
-        for (int i = 0; i < 10; i++)
-        {
-            Console.WriteLine("Charmander: Charmander!");
-        }
-    }
-
-    // Method to get nickname
-    public string GetNickname()
-    {
-        return nickname;
+        Console.WriteLine($"{nickname}: Charmander!");
+        //for (int index = 0; index < 10; index++)
+        //{
+        //    Console.WriteLine($"{nickname}: Charmander!");
+        //}
     }
 }
-
-

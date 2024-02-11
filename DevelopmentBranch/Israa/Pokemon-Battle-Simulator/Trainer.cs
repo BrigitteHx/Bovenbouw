@@ -1,30 +1,40 @@
 ﻿using System;
-// Trainer class
+
 class Trainer
 {
     private string name;
-    private List<Pokeball> belt = new List<Pokeball>();
+    private List<Pokemon> belt; // List to store Pokémon
+    private int nextPokemonIndex; // Index to keep track of the next Pokémon to be returned / private because it is only used in this class
 
-    // 6 pokeballs for the trainer
+    // Constructor
     public Trainer(string name)
     {
-        this.name = name;
-        for (int i = 0; i < 6; i++)
+        this.name = name; // the name of the player
+        belt = new List<Pokemon>(); // Create a new list to store Pokémon
+        nextPokemonIndex = 0; // the index to the first Pokémon in the list
+
+        // Add six Pokémon to the belt (two of each type)
+        for (int index = 0; index < 2; index++)
         {
-            belt.Add(new Pokeball());
+            belt.Add(new Squirtle("Squirtle"));
+            belt.Add(new Charmander("Charmander"));
+            belt.Add(new Bulbasaur("Bulbasaur"));
         }
     }
 
     // Method to throw a pokeball
     public void ThrowPokeball()
     {
-        Console.WriteLine($"Trainer {name} throws a pokeball!");
+        Console.WriteLine($"Player {name} throws a pokeball!");
+        // Logic to throw pokeball
     }
 
-    // Method to return a pokemon back to its pokeball
-    public void ReturnPokemon()
+    // Method to return the next Pokémon from the belt and increment the index
+    public Pokemon GetNextPokemon()
     {
-        Console.WriteLine($"Trainer {name} returns the pokemon back to it's pokeball!");
+        Pokemon nextPokemon = belt[nextPokemonIndex]; // Get the next Pokémon from the belt
+        nextPokemonIndex = (nextPokemonIndex + 1) % belt.Count;  // Increment the index and Moving back if necessary to the beginning of the list.
+        return nextPokemon; // Return the next Pokémon.
     }
 
     // Method to get the trainer's name
