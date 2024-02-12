@@ -40,8 +40,12 @@ class Program
             Pokeball pokeball = new Pokeball();
 
             // Start the battle with the pokeball
-            StartBattle(trainer1, trainer2, pokeball);
+            Battle battle = new Battle();
+            battle.StartBattle(trainer1, trainer2, pokeball);
 
+            // Create a new arena for each battle
+            Arena.DisplayWinner(trainer1, trainer2, battle);
+            
             // Ask if the player wants to play again
             Console.WriteLine("Do you want to play again? (yes/no)");
             string playAgainResponse = Console.ReadLine();
@@ -55,29 +59,4 @@ class Program
         Console.WriteLine("Thanks for playing!");
     }
 
-    // Method to start the battle
-    static void StartBattle(Trainer trainer1, Trainer trainer2, Pokeball pokeball)
-    {
-        Console.WriteLine($"Player {trainer1.GetName()} VS Player {trainer2.GetName()}!");
-
-        for (int count = 0; count < 6; count++)
-        {
-            Console.WriteLine($"Round {count + 1}"); // Round number
-
-            // Player 1 throws the pokeball
-            trainer1.ThrowPokeball();
-
-            // Release Pokémon from the pokeball, and the Pokémon do its battle cry
-            pokeball.ReleaseAndBattleCry(trainer1.GetNextPokemon());
-            Console.WriteLine("\n");
-
-            // Player 2 throws the first pokeball
-            trainer2.ThrowPokeball();
-
-            // Release Pokémon from the pokeball, and the Pokémon do its battle cry
-            pokeball.ReleaseAndBattleCry(trainer2.GetNextPokemon());
-            Console.WriteLine("---------------"); // Separator
-            Console.WriteLine("\n");
-        }
-    }
 }

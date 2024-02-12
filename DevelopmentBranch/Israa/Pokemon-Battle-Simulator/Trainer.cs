@@ -20,6 +20,10 @@ class Trainer
             belt.Add(new Charmander("Charmander"));
             belt.Add(new Bulbasaur("Bulbasaur"));
         }
+
+        // Shuffle the belt
+        belt = belt.OrderBy(x => Random.Shared.Next()).ToList();
+
     }
 
     // Method to throw a pokeball

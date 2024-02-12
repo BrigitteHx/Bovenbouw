@@ -8,7 +8,7 @@ class Pokeball
         Console.WriteLine($"The pokeball is thrown, which opens it up and releases {pokemon.GetNickname()}!\nThe {pokemon.GetNickname()} does its battle cry.");
         pokemon.BattleCry();
         Console.WriteLine($"The {pokemon.GetNickname()} is returned to the pokeball.");
-    }
+    }    
 }
 
 

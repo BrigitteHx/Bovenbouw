@@ -3,7 +3,7 @@
 class Squirtle : Pokemon
 {
     // Constructor
-    public Squirtle(string nickname) : base(nickname, "water", "leaf")
+    public Squirtle(string nickname) : base(nickname, "water", "grass")
     {
     }
 
