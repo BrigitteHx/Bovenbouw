@@ -11,8 +11,6 @@ public class Pokeball
         this.isOpen = false;
     }
 
-    public Pokemon Pokemon { get { return pokemon; } }
-
     public void ThrowPokeball()
     {
         Console.WriteLine("The pokeball releases the Pokémon!");

@@ -6,10 +6,6 @@ public class Trainer
     private string name;
     private List<Pokeball> belt;
 
-    public string Name { get { return name; } }
-
-    public List<Pokeball> Belt { get { return belt; } }
-
     public Trainer(string name)
     {
         this.name = name;
@@ -20,18 +16,26 @@ public class Trainer
     {
         if (belt.Count >= 6)
         {
-            Console.WriteLine("The belt cannot hold more than six pokeballs.");
+            throw new InvalidOperationException("The belt cannot hold more than six pokeballs.");
         }
-        else
-        {
-            belt.Add(pokeball);
-        }
+        belt.Add(pokeball);
     }
 
-    public Pokeball ThrowRandomPokeball()
+    public void ThrowPokeball(int index)
     {
-        Random random = new Random();
-        int index = random.Next(belt.Count);
-        return belt[index];
+        if (index < 0 || index >= belt.Count)
+        {
+            throw new IndexOutOfRangeException("Invalid pokeball index.");
+        }
+        belt[index].ThrowPokeball();
+    }
+
+    public void ReturnCharmander(int index)
+    {
+        if (index < 0 || index >= belt.Count)
+        {
+            throw new IndexOutOfRangeException("Invalid pokeball index.");
+        }
+        belt[index].ReturnPokemon();
     }
 }
