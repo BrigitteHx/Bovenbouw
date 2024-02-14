@@ -10,7 +10,7 @@ class Squirtle : Pokemon
     // Method for battle cry
     public override void BattleCry()
     {
-        Console.WriteLine($"{nickname}: Squirtle!");
+        Console.WriteLine($"{GetNickname()}: Squirtle!");
         //for (int index = 0; index < 10; index++)
         //{
         //    Console.WriteLine($"{nickname}: Squirtle!");

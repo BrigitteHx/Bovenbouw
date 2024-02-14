@@ -27,14 +27,14 @@ class Trainer
     }
 
     // Method to throw a pokeball
-    public void ThrowPokeball()
+    internal void ThrowPokeball()
     {
         Console.WriteLine($"Player {name} throws a pokeball!");
         // Logic to throw pokeball
     }
 
     // Method to return the next Pokémon from the belt and increment the index
-    public Pokemon GetNextPokemon()
+    internal Pokemon GetNextPokemon()
     {
         Pokemon nextPokemon = belt[nextPokemonIndex]; // Get the next Pokémon from the belt
         nextPokemonIndex = (nextPokemonIndex + 1) % belt.Count;  // Increment the index and Moving back if necessary to the beginning of the list.
@@ -42,7 +42,7 @@ class Trainer
     }
 
     // Method to get the trainer's name
-    public string GetName()
+    internal string GetName()
     {
         return name;
     }

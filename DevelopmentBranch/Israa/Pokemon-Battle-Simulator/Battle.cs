@@ -3,9 +3,9 @@
 class Battle
 {
     // Count the number of wins for each player
-    public int player1Wins;
-    public int player2Wins;
-    public int tie;
+    private int player1Wins;
+    private int player2Wins;
+    private int tie;
 
     // Method to start the battle
     public void StartBattle(Trainer trainer1, Trainer trainer2, Pokeball pokeball)
@@ -37,27 +37,42 @@ class Battle
 
 
             // Check the winner of the battle
-            
             if (pokemon1.GetStrength() == pokemon2.GetWeakness())
             {
                 Console.WriteLine($"{pokemon1.GetNickname()} wins!");
-                player1Wins++;
+                IncrementPlayer1Wins();
             }
             else if (pokemon2.GetStrength() == pokemon1.GetWeakness())
             {
                 Console.WriteLine($"{pokemon2.GetNickname()} wins!");
-                player2Wins++;
+                IncrementPlayer2Wins();
             }
             else
             {
                 Console.WriteLine("It's a tie!");
-                tie++;
+                IncrementTie();
             }
-
-            // Check the winner of the 
 
             Console.WriteLine("---------------"); // Separator
         }
+    }
+
+    // Method to increment player 1's win count
+    private void IncrementPlayer1Wins()
+    {
+        player1Wins++;
+    }
+
+    // Method to increment player 2's win count
+    private void IncrementPlayer2Wins()
+    {
+        player2Wins++;
+    }
+
+    // Method to increment tie count
+    private void IncrementTie()
+    {
+        tie++;
     }
 
     // Method to get the score of the battle for player 1
@@ -84,6 +99,7 @@ class Battle
         return tie;
     }
 }
+
 
 
 //Console.WriteLine("-------------------------------------------")
