@@ -7,12 +7,7 @@ build_property.InvariantGlobalization =
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
-<<<<<<< HEAD:DevelopmentBranch/Brigitte/Leerpad1/PokemonGame/obj/Release/net8.0/testing.GeneratedMSBuildEditorConfig.editorconfig
-build_property.RootNamespace = testing
-build_property.ProjectDir = C:\S C H O O L\Software Developer - Year Two\bovenbouw\DevelopmentBranch\Brigitte\Leerpad1\PokemonGame\
-=======
 build_property.RootNamespace = Leerpad1
-build_property.ProjectDir = C:\Users\brigi\Jaar2Softwaredevelopment\source\repos\Leerpad1\Leerpad1\
->>>>>>> d17e1871771b7ae3fbc588b69e731ae85b4f6335:DevelopmentBranch/Brigitte/Leerpad1/PokemonGame/obj/Debug/net8.0/Leerpad1.GeneratedMSBuildEditorConfig.editorconfig
+build_property.ProjectDir = C:\Users\brigi\Jaar2Softwaredevelopment\C-Learning\source\repos\C-learning\Leerpad1\PokemonGame\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
