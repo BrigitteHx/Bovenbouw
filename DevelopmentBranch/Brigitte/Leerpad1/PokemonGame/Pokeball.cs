@@ -3,31 +3,32 @@
 public class Pokeball
 {
     private bool isOpen;
-    private Pokemon pokemon;
+    private Pokemon pokemon = null!;
+
+    public bool IsOpen
+    {
+        get { return isOpen; }
+        private set { isOpen = value; }
+    }
+
+    public Pokemon Pokemon
+    {
+        get { return pokemon; }
+        private set { pokemon = value; }
+    }
 
     public Pokeball(Pokemon pokemon)
     {
-        this.pokemon = pokemon;
-        this.isOpen = false;
-    }
-
-    public Pokemon Pokemon { get { return pokemon; } }
-
-    public void ThrowPokeball()
-    {
+        this.Pokemon = pokemon;
+        this.IsOpen = false;
         Console.WriteLine("The pokeball releases the Pokémon!");
-        pokemon.BattleCryShout();
-        isOpen = true;
+        pokemon.BattleCryShout(); 
+        IsOpen = true;
     }
 
     public void ReturnPokemon()
     {
         Console.WriteLine("The Pokémon returns to the pokeball.");
-        isOpen = false;
-    }
-
-    public bool IsOpen()
-    {
-        return isOpen;
+        IsOpen = false;
     }
 }

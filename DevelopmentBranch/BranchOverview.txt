@@ -9,3 +9,5 @@ File to log branch activities:
 09-02-2024 Assignment 3 Pokemon game (Brigitte) 
 
 13-02-2024 Assignment 4 Pokemon game (Brigitte) 
+
+16-02-2024 Assignment 5 Pokemon game (Brigitte) 

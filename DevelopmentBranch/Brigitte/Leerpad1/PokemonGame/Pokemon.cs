@@ -1,21 +1,50 @@
-﻿using System;
+﻿using System; 
 
-public abstract class Pokemon
+public enum PokemonType
 {
-    protected string nickname;
-    protected string strength;
-    protected string weakness;
+    Fire,
+    Grass,
+    Water
+}
 
-    public string Nickname { get { return nickname; } }
-    public string Strength { get { return strength; } }
-    public string Weakness { get { return weakness; } }
+public class Pokemon
+{
+    private string nickname = null!;
+    private PokemonType strength;
+    private PokemonType weakness;
 
-    public Pokemon(string nickname, string strength, string weakness)
+    public string Nickname
     {
-        this.nickname = nickname;
-        this.strength = strength;
-        this.weakness = weakness;
+        get { return nickname; }
+        private set { nickname = value; }
     }
 
-    public abstract void BattleCryShout();
+    public PokemonType Strength
+    {
+        get { return strength; }
+        private set { strength = value; }
+    }
+
+    public PokemonType Weakness
+    {
+        get { return weakness; }
+        private set { weakness = value; }
+    }
+
+    public Pokemon(string nickname, PokemonType strength, PokemonType weakness)
+    {
+        this.Nickname = nickname;
+        this.Strength = strength;
+        this.Weakness = weakness;
+    }
+
+    public override string ToString()
+    {
+        return $"{Nickname} (Strength: {Strength}, Weakness: {Weakness})";
+    }
+
+    public virtual void BattleCryShout()
+    {
+        // empty so no overriden
+    }
 }
