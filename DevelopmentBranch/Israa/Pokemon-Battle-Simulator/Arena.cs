@@ -2,35 +2,43 @@
 
 class Arena
 {
-    // Static method to display the winner of the battle
-    public static void DisplayWinner(Trainer trainer1, Trainer trainer2, Battle battle)
+    // Count the number of battles won by each player
+    private int player1Wins;
+    private int player2Wins;
+
+    // Count the number of ties
+    private int tie;
+
+    // Check the winner of the round
+    public void CheckWinner(Pokemon pokemon1 , Pokemon pokemon2)
     {
-        Console.WriteLine("-------------------------------");
+        // Check the winner of the round
+        if (pokemon1.GetStrength() == pokemon2.GetWeakness())
+        {
+            Console.WriteLine($"{pokemon1.GetNickname()} wins the round!");
+            IncrementPlayer1Wins();
+        }
+        else if (pokemon2.GetStrength() == pokemon1.GetWeakness())
+        {
+            Console.WriteLine($"{pokemon2.GetNickname()} wins the round!");
+            IncrementPlayer2Wins();
+        }
+        else
+        {
+            Console.WriteLine("The round is a tie!");
+            IncrementTie();
+        }
+    }
 
-        // Get Round number
-        int Rounds = battle.GetRound();
-
-        // Get the score of the battle for each player
-        int player1Wins = battle.GetPlayer1Wins();
-        int player2Wins = battle.GetPlayer2Wins();
-
-        // Get the number of ties
-        int tie = battle.GetTie();
-
-        // Display the score of the battle for each player
-        Console.WriteLine($"Player {trainer1.GetName()} VS Player {trainer2.GetName()}");
-        Console.WriteLine($"Rounds: {Rounds}");
-
-        Console.WriteLine($"Player {trainer1.GetName()}: {player1Wins} Rounds");
-        Console.WriteLine($"Player {trainer2.GetName()}: {player2Wins} Rounds");
-        Console.WriteLine($"Ties: {tie} Rounds");
-
+    // Static method to display the winner of the battle
+    public static void DisplayWinner(Trainer trainer1, Trainer trainer2, Arena arena)
+    {
         // Display the winner of the battle
-        if (player1Wins > player2Wins)
+        if (arena.player1Wins > arena.player2Wins)
         {
             Console.WriteLine($"Player {trainer1.GetName()} wins the battle!");
         }
-        else if (player2Wins > player1Wins)
+        else if (arena.player2Wins > arena.player1Wins)
         {
             Console.WriteLine($"Player {trainer2.GetName()} wins the battle!");
         }
@@ -38,8 +46,47 @@ class Arena
         {
             Console.WriteLine("The battle is a tie!");
         }
+    }
 
-        Console.WriteLine("-------------------------------");
+    // Method to increment player 1's win count
+    private void IncrementPlayer1Wins()
+    {
+        player1Wins++;
+    }
 
+    // Method to increment player 2's win count
+    private void IncrementPlayer2Wins()
+    {
+        player2Wins++;
+    }
+
+    // Method to increment tie count
+    private void IncrementTie()
+    {
+        tie++;
+    }
+
+    // Method to get the score of the battle for player 1
+    public int GetPlayer1Wins()
+    {
+        return player1Wins;
+    }
+
+    // Method to get the score of the battle for player 2
+    public int GetPlayer2Wins()
+    {
+        return player2Wins;
+    }
+
+    // Method to get the round number
+    public int GetRound()
+    {
+        return 6;
+    }
+
+    // Method to get the number of ties
+    public int GetTie()
+    {
+        return tie;
     }
 }
