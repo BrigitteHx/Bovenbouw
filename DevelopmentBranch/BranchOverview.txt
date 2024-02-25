@@ -17,3 +17,5 @@ File to log branch activities:
 21-2-2024 Backend 5 (Brigitte)
 
 24-2-2024 HTML-CSS krantenartikel, receptenpagina (Brigitte) 
+
+25-2-2024 HTML-CSS gamecatalogus eindopdracht (Brigitte) 
