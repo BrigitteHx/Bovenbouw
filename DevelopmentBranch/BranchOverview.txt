@@ -6,6 +6,7 @@ File to log branch activities:
 07-02-2024 Assignment 1 Pokemon game (Brigitte) 
 
 08-02-2024 Assignment 2 Pokemon game (Brigitte)
+
 09-02-2024 Assignment 3 Pokemon game (Brigitte) 
 
 13-02-2024 Assignment 4 Pokemon game (Brigitte) 
@@ -18,4 +19,6 @@ File to log branch activities:
 
 24-2-2024 HTML-CSS krantenartikel, receptenpagina (Brigitte) 
 
-25-2-2024 HTML-CSS gamecatalogus eindopdracht (Brigitte) 
+25-2-2024 HTML-CSS gamecatalogus eindopdracht (Brigitte)
+25-2-2024 Javascript Lab 1 (Brigitte)
+ 
