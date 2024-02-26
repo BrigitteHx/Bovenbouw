@@ -21,4 +21,8 @@ File to log branch activities:
 
 25-2-2024 HTML-CSS gamecatalogus eindopdracht (Brigitte)
 25-2-2024 Javascript Lab 1 (Brigitte)
+25-2-2024 Javascript Lab 2 dagen + namen (Brigitte)
+
+26-2-2024 Javascript Lab 2 piramide oplopend + piramide aflopend + tafels + rekenen (Brigitte)
+
  
