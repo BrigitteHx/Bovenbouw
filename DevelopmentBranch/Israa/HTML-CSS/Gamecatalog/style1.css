@@ -1,0 +1,214 @@
+/* nabar style */
+.navbar_container{
+    border: 2px solid black;
+}
+nav{
+    margin: 0px 5px;
+}
+
+.navbar_container ul {
+    list-style-type: none;
+    margin: 20;
+    padding: 0;
+    overflow: hidden;
+    background-color: #F9F07A; 
+}
+
+li {
+float: left;
+border-right: 2px solid white;
+
+}
+
+li a {
+display: block;
+color: black;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+li a:hover {
+background-color: white;
+}
+
+
+/* content/body style */
+
+.flex-container {
+    display: flex;
+}
+
+.flex-child {
+    border: 2px solid rgb(0, 0, 0);
+    margin-top: 10px;
+    width: 25%;
+    background-color: #FB88B4;
+}  
+
+.flex-child:first-child {
+    margin-right: 20px;
+    width: 75%;
+    background-color: #9195F6;
+
+}
+
+.button {
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+  }
+
+.blue-button {background-color: #B7C9F2; color: black;} 
+.pink-button {background-color: #FB88B4; color: black;}  
+.yellow-button {background-color: #F9F07A; color: black;}  
+
+.text-container{
+    margin: 20px;
+    
+}
+.container-border{
+    margin-top: 10px;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 4px;
+    width: 100%;
+}
+.container-border img {
+    width: 100%;
+    
+}
+.column {
+    float: left;
+    width: 22%;
+    padding: 1%; 
+    
+}
+.yellow-container{
+    background-color: #F9F07A;
+}
+.pink-container{
+    background-color: #FB88B4;
+}
+.blue-container{
+    background-color: #B7C9F2;
+}
+.purple-container{
+    background-color: #9195F6;
+}
+ol {
+    list-style-type: inherit;
+    text-decoration: none;
+}
+ol>p{
+    margin-bottom: 10px;
+}
+
+
+.game-container {
+    border: 2px solid white;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #FB88B4; /* Add your preferred background color */
+}
+
+.game-container h2 {
+    margin-top: 0;
+    color: #e70059;
+}
+
+.game-container p {
+    margin: 5px 0;
+    color: white;
+}
+
+.game-container p:first-child {
+    margin-top: 0;
+}
+
+.game-container p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* Dropdown menu style */
+#genreFilter, #priceFilter {
+    border: 2px solid white; /* Black border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #9195F6; /* White background */
+    color: #ffffff;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+
+/* Add this CSS to your existing CSS styles */
+
+/* Filter row layout */
+.filter-row {
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly along the row */
+}
+
+/* Filter on the left */
+.filter-left {
+    flex: 1; /* Take up available space */
+}
+
+/* Filter on the right */
+.filter-right {
+    flex: 1; /* Take up available space */
+    text-align: right; /* Align content to the right */
+}
+/* Game list container */
+.game-list-container {
+    max-height: 470px; /* Adjust as needed */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* CSS for circular checkbox */
+input[type="checkbox"].styled-checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #e70059; /* Border color */
+    outline: none;
+    cursor: pointer;
+    vertical-align: middle; /* Align the checkbox with text */
+    margin-right: 5px; /* Add some space between checkbox and text */
+}
+
+input[type="checkbox"].styled-checkbox:checked {
+    background-color: #e70059; /* Checked background color */
+}
+
+/* CSS for game details in the cart */
+.cart-item {
+    border: 2px solid white;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #FB88B4; /* Add your preferred background color */
+}
+
+.game-details {
+    color: white;
+}
+
+.game-details p {
+    margin: 5px 0;
+}
+
+.game-details p:first-child {
+    margin-top: 0;
+}
+
+.game-details p:last-child {
+    margin-bottom: 0;
+}

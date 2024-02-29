@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci Series</title>
+    <script>
+        // Function to calculate the nth Fibonacci number recursively
+        function fibonacci(n) {
+            if (n <= 1) {
+                return n;
+            } else {
+                return fibonacci(n - 1) + fibonacci(n - 2);
+            }
+        }
+
+        // Function to generate and display the first 20 Fibonacci numbers
+        function displayFibonacciSeries() {
+            const resultElement = document.getElementById("fibonacci-result");
+            let resultString = "Fibonacci Series: ";
+
+            for (let i = 0; i < 20; i++) {
+                resultString += fibonacci(i) + ", ";
+            }
+
+            resultElement.textContent = resultString;
+        }
+    </script>
+</head>
+<body>
+    <h1>Fibonacci Series</h1>
+    <button onclick="displayFibonacciSeries()">Calculate Fibonacci Series</button>
+    <p id="fibonacci-result"></p>
+</body>
+</html>

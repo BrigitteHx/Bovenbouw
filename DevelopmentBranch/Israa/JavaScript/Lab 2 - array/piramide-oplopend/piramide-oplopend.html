@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Oplopende Piramide</title>
+<style>
+  #pyramid {
+    font-family: monospace;
+    white-space: pre;
+  }
+</style>
+</head>
+<body>
+
+<div>
+  <label for="numRows">Voer het aantal rijen in:</label>
+  <input type="number" id="numRows" name="numRows" min="1" value="10">
+  <button onclick="generatePyramid()">Genereer Piramide</button>
+</div>
+
+<div id="pyramid"></div>
+
+<script src="piramide-oplopend.js"></script>
+
+</body>
+</html>

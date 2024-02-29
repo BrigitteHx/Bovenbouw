@@ -1,0 +1,42 @@
+div{
+    margin: 0 auto;
+    padding-left: 20%;
+    padding-right: 20%;
+    font-size: small;
+    font-family: 'Roboto', sans-serif;
+}
+
+img{
+    height: 500px;
+}
+
+p, li{
+    
+    font-size: 20px;
+}
+
+ol > li{
+    margin-bottom: 15px;
+}
+
+h1{
+    font-size: 40px;
+    line-height: 36px;
+}
+
+#firstP{
+    font-size: 24px;
+    line-height: 32px;
+}
+
+h2{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#tip{
+    background-color: #def6ed;
+    border-radius: 4px;
+    padding: 0.5% 2%;
+    margin-top: 10px;
+}

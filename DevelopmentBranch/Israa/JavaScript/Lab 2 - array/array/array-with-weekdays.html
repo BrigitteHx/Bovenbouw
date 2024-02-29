@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dagen van de Week</title>
+</head>
+<body>
+    <h2>Alle dagen van de week zijn:</h2>
+    <p id="all-days"></p>
+
+    <h2>De werkdagen zijn:</h2>
+    <p id="work-days"></p>
+
+    <h2>De weekenddagen zijn:</h2>
+    <p id="weekend-days"></p>
+
+    <h2>Alle dagen van de week in omgekeerde volgorde zijn:</h2>
+    <p id="all-days-reversed"></p>
+
+    <h2>De werkdagen in omgekeerde volgorde zijn:</h2>
+    <p id="work-days-reversed"></p>
+
+    <h2>De weekenddagen in omgekeerde volgorde zijn:</h2>
+    <p id="weekend-days-reversed"></p>
+
+    <script>
+        const daysOfWeek = ["maandag", "dinsdag", "woensdag", "donderdag", "vrijdag", "zaterdag", "zondag"];
+
+        // Functie om de dagen van de week op het scherm weer te geven
+        function displayDays() {
+            document.getElementById("all-days").textContent = daysOfWeek.join(", ");
+            document.getElementById("work-days").textContent = daysOfWeek.slice(0, 5).join(", ");
+            document.getElementById("weekend-days").textContent = daysOfWeek.slice(5).join(", ");
+            document.getElementById("all-days-reversed").textContent = daysOfWeek.slice().reverse().join(", ");
+            document.getElementById("work-days-reversed").textContent = daysOfWeek.slice(0, 5).reverse().join(", ");
+            document.getElementById("weekend-days-reversed").textContent = daysOfWeek.slice(5).reverse().join(", ");
+        }
+
+        // Roep de functie aan om de dagen weer te geven zodra de pagina geladen is
+        window.onload = displayDays;
+    </script>
+</body>
+</html>

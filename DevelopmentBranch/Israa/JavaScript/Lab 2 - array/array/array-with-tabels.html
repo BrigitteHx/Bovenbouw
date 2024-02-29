@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array met Tafels</title>
+</head>
+<body>
+    <h2>Tafels:</h2>
+    <div id="tables"></div>
+
+    <script>
+        // Maak een array aan met de gewenste tafels
+        const tablesArray = [2, 4, 6, 8];
+
+        // Functie om tafels te genereren en op het scherm weer te geven
+        function generateTables(tables) {
+            let resultString = "";
+
+            // Itereer over elk getal in de array en genereer de tafel
+            for (let i = 0; i < tables.length; i++) {
+                resultString += `<h3>Tafel van ${tables[i]}:</h3>`;
+                for (let j = 1; j <= 10; j++) {
+                    resultString += `${tables[i]} * ${j} = ${tables[i] * j}<br>`;
+                }
+            }
+
+            return resultString;
+        }
+
+        // Toon de tafels op het scherm
+        document.getElementById("tables").innerHTML = generateTables(tablesArray);
+    </script>
+</body>
+</html>
