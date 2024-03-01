@@ -26,4 +26,6 @@ File to log branch activities:
 26-2-2024 Javascript Lab 2 piramide oplopend + piramide aflopend + tafels + rekenen (Brigitte)
 
 27-2-2024 Javascript Lab 2 Papi Gelato redone (Brigitte) 
+
+1-3-2024 Javascript overige Labs toegevoegd (Brigitte) 
  
