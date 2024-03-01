@@ -1,0 +1,54 @@
+/* Stijlen voor de header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Stijlen voor het menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Stijlen voor de header afbeelding */
+.header-img {
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* stijlen voor images in onderwerpen pages */
+
+.image-onderwerp{
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Stijlen voor de footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
