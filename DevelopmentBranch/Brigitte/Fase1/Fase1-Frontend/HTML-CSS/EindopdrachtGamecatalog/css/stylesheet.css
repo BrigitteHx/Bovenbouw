@@ -16,7 +16,7 @@ h1 {
 }
   
 /* header */
-  header {
+header {
     display: flex;
     width: 100%;
     background-color: black;
@@ -41,6 +41,15 @@ header nav a:hover {
 }
   
 /* container */
+.container main .top-div,
+.container main .reviews,
+.container main .system-requirements {
+    border: 1px solid black;
+    margin-bottom: 20px; 
+    margin-top: 20px; 
+    padding: 20px;
+}
+
 .container header, .container2 header {
     background-color: black;
 }
@@ -52,7 +61,8 @@ header nav a:hover {
   
 .container main .top-div, .container2 main .top-div {
     display: flex;
-    padding: 20px;
+    padding: 0 20px; 
+    margin: 0; 
     border-bottom: 1px solid black;
 }
   
@@ -66,15 +76,20 @@ header nav a:hover {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    border-left: 1px solid black;
+    border-left: 1px solid black;   /* lijntje */
+    padding: 0; 
 }
   
 .container main .screenshots, .container2 main .screenshots {
     display: flex;
+    justify-content: center;
+    margin: -2px;
+    padding-top: 20px; 
 }
-  
+
 .container main .screenshots img, .container2 main .screenshots img {
     width: 25%;
+    margin: 2px; 
 }
   
 .container main .system-requirements, .container2 main .system-requirements {
@@ -103,4 +118,27 @@ footer {
   
 footer h1 {
     color: white;
+}
+
+/* extra container voor padding */
+.nav-padding {
+    background-color: white;
+    padding-bottom: 20px; 
+}
+
+/* box edit */
+.box-container {
+    display: flex;
+}
+
+.box {
+    background-color: #f2f2f2;
+    padding: 5px 10px; 
+    margin-right: 10px;  
+    border: 1px solid #000000; 
+    cursor: pointer; 
+}
+
+.box:last-child {
+    margin-right: 0; 
 }
