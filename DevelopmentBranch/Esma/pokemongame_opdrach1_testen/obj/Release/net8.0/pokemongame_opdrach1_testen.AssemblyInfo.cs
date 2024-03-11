@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("pokemongame_opdrach1_testen")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f298adfb2dc0b586ad0c842976297e55f9dcf43f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+022aa92a8a7681d990af8665b87b0326443f6f4d")]
 [assembly: System.Reflection.AssemblyProductAttribute("pokemongame_opdrach1_testen")]
 [assembly: System.Reflection.AssemblyTitleAttribute("pokemongame_opdrach1_testen")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
