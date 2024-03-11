@@ -1,0 +1,21 @@
+body {
+    background-color: lightblue;
+}
+
+.images_class{
+    border: 3px solid rgb(203, 174, 93);
+    margin: 7px
+}
+
+#vloot1 , #vloot3{
+    float: left;
+}
+
+#vloot2{
+    float: right;
+}
+
+.container {
+    padding: 50px;
+    border: 3px solid grey;
+}

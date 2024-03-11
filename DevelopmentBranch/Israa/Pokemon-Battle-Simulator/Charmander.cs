@@ -10,7 +10,7 @@ class Charmander : Pokemon
     // Method for battle cry
     public override void BattleCry()
     {
-        Console.WriteLine($"{nickname}: Charmander!");
+        Console.WriteLine($"{GetNickname()}: Charmander!");
         //for (int index = 0; index < 10; index++)
         //{
         //    Console.WriteLine($"{nickname}: Charmander!");

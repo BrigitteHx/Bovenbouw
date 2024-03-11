@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Operatoren</title>
+</head>
+<body>
+    <h2>Optellen:</h2>
+    <p id="addition"></p>
+
+    <h2>Aftrekken:</h2>
+    <p id="subtraction"></p>
+
+    <h2>Vermenigvuldigen:</h2>
+    <p id="multiplication"></p>
+
+    <h2>Delen:</h2>
+    <p id="division"></p>
+
+    <script>
+        var arrayEen = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        var arrayTwee = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20];
+
+        // Functie om twee arrays op te tellen en de resultaten weer te geven
+        function optellen(array1, array2) {
+            let resultString = "";
+            for (let i = 0; i < array1.length; i++) {
+                resultString += `${array1[i]} + ${array2[i]} = ${array1[i] + array2[i]}<br>`;
+            }
+            return resultString;
+        }
+
+        // Functie om twee arrays af te trekken en de resultaten weer te geven
+        function aftrekken(array1, array2) {
+            let resultString = "";
+            for (let i = 0; i < array1.length; i++) {
+                resultString += `${array2[i]} - ${array1[i]} = ${array2[i] - array1[i]}<br>`;
+            }
+            return resultString;
+        }
+
+        // Functie om twee arrays te vermenigvuldigen en de resultaten weer te geven
+        function vermenigvuldigen(array1, array2) {
+            let resultString = "";
+            for (let i = 0; i < array1.length; i++) {
+                resultString += `${array1[i]} * ${array2[i]} = ${array1[i] * array2[i]}<br>`;
+            }
+            return resultString;
+        }
+
+        // Functie om twee arrays te delen en de resultaten weer te geven
+        function delen(array1, array2) {
+            let resultString = "";
+            for (let i = 0; i < array1.length; i++) {
+                resultString += `${array2[i]} / ${array1[i]} = ${array2[i] / array1[i]}<br>`;
+            }
+            return resultString;
+        }
+
+        // Toon de resultaten op het scherm
+        document.getElementById("addition").innerHTML = optellen(arrayEen, arrayTwee);
+        document.getElementById("subtraction").innerHTML = aftrekken(arrayEen, arrayTwee);
+        document.getElementById("multiplication").innerHTML = vermenigvuldigen(arrayEen, arrayTwee);
+        document.getElementById("division").innerHTML = delen(arrayEen, arrayTwee);
+    </script>
+</body>
+</html>

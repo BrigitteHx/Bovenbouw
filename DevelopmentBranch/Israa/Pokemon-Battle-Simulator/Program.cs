@@ -3,9 +3,10 @@ using System.Collections.Generic;
 
 class Program
 {
+    // Static so it can be accessed from anywhere and it's value is shared across all instances of the class
     public static bool playAgain = true;
 
-    static void Main(string[] args)
+    static void Main(string[] args) // void means the method does not return a value
     {
         StartGame();
     }
@@ -39,13 +40,27 @@ class Program
             // Create a new pokeball for each battle
             Pokeball pokeball = new Pokeball();
 
+            // Create a new arena for each battle
+            Arena arena = new Arena();
+
             // Start the battle with the pokeball
             Battle battle = new Battle();
-            battle.StartBattle(trainer1, trainer2, pokeball);
+            battle.StartBattle(trainer1, trainer2, pokeball, arena);
 
             // Create a new arena for each battle
-            Arena.DisplayWinner(trainer1, trainer2, battle);
-            
+            Console.WriteLine("-------------------------------");
+
+            Console.WriteLine($"Player {trainer1.GetName()} VS Player {trainer2.GetName()}");
+            Console.WriteLine($"Rounds: {arena.GetRound()}");
+
+            Console.WriteLine($"Player {trainer1.GetName()}: {arena.GetPlayer1Wins()} Rounds");
+            Console.WriteLine($"Player {trainer2.GetName()}: {arena.GetPlayer2Wins()} Rounds");
+            Console.WriteLine($"Ties: {arena.GetTie()} Rounds");
+
+            Arena.DisplayWinner(trainer1, trainer2, arena);
+            Console.WriteLine("-------------------------------");
+
+
             // Ask if the player wants to play again
             Console.WriteLine("Do you want to play again? (yes/no)");
             string playAgainResponse = Console.ReadLine();

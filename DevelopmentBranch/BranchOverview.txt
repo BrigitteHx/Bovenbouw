@@ -6,6 +6,27 @@ File to log branch activities:
 07-02-2024 Assignment 1 Pokemon game (Brigitte) 
 
 08-02-2024 Assignment 2 Pokemon game (Brigitte)
+
 09-02-2024 Assignment 3 Pokemon game (Brigitte) 
 
 13-02-2024 Assignment 4 Pokemon game (Brigitte) 
+
+16-02-2024 Assignment 5 Pokemon game (Brigitte) 
+
+19-02-2024 Backend 1-4 (Brigitte)
+
+21-2-2024 Backend 5 (Brigitte)
+
+24-2-2024 HTML-CSS krantenartikel, receptenpagina (Brigitte) 
+
+25-2-2024 HTML-CSS gamecatalogus eindopdracht (Brigitte)
+25-2-2024 Javascript Lab 1 (Brigitte)
+25-2-2024 Javascript Lab 2 dagen + namen (Brigitte)
+
+26-2-2024 Javascript Lab 2 piramide oplopend + piramide aflopend + tafels + rekenen (Brigitte)
+
+27-2-2024 Javascript Lab 2 Papi Gelato redone (Brigitte) 
+
+1-3-2024 Javascript overige Labs toegevoegd (Brigitte) 
+ 
+5-3-2024 Javascript Front end compleet (Brigitte) 

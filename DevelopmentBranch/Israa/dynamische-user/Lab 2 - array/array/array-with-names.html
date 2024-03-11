@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingevoerde Namen</title>
+</head>
+<body>
+    <h2>De ingevoerde namen in de array zijn:</h2>
+    <p id="names"></p>
+
+    <h2>De ingevoerde namen in de array in omgekeerde volgorde zijn:</h2>
+    <p id="names-reversed"></p>
+
+    <script>
+        // Functie om namen van de gebruiker te vragen en in een array op te slaan
+        function getNamesArray() {
+            let numberOfNames = parseInt(prompt("Hoeveel namen wilt u in de array stoppen? (minimaal 3)"));
+
+            // Zorg ervoor dat het aantal namen minimaal 3 is
+            while (numberOfNames < 3 || isNaN(numberOfNames)) {
+                numberOfNames = parseInt(prompt("Minimaal 3 namen zijn vereist. Hoeveel namen wilt u in de array stoppen?"));
+            }
+
+            const names = []; // Maak een lege array voor de namen
+
+            // Vraag aan de gebruiker om de namen in te voeren
+            for (let i = 0; i < numberOfNames; i++) {
+                let name = prompt(`Voer naam ${i + 1} in:`);
+                names.push(name); // Voeg de naam toe aan de array
+            }
+
+            return names; // Retourneer de array met namen
+        }
+
+        // Functie om een array van namen op het scherm weer te geven
+        function displayNames(elementId, namesArray) {
+            document.getElementById(elementId).textContent = namesArray.join(", ");
+        }
+
+        // Functie om een array van namen in omgekeerde volgorde op het scherm weer te geven
+        function displayNamesReversed(elementId, namesArray) {
+            document.getElementById(elementId).textContent = namesArray.slice().reverse().join(", ");
+        }
+
+        // Roep de functies aan om de namen weer te geven
+        const namesArray = getNamesArray();
+        displayNames("names", namesArray);
+        displayNamesReversed("names-reversed", namesArray);
+    </script>
+</body>
+</html>

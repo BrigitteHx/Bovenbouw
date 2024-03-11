@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persoonsregister</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    }
+
+    #person-info {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    #person-info h1 {
+        text-align: center;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    li {
+        margin-bottom: 10px;
+    }
+
+    strong {
+        font-weight: bold;
+    }
+
+    </style>
+</head>
+<body>
+    <div id="person-info">
+        <h1>Persoonsgegevens</h1>
+        <ul>
+            <li><strong>Voornaam:</strong> <span id="voornaam"></span></li>
+            <li><strong>Achternaam:</strong> <span id="achternaam"></span></li>
+            <li><strong>Nationaliteit:</strong> <span id="nationaliteit"></span></li>
+            <li><strong>Leeftijd:</strong> <span id="leeftijd"></span></li>
+            <li><strong>Gewicht:</strong> <span id="gewicht"></span></li>
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

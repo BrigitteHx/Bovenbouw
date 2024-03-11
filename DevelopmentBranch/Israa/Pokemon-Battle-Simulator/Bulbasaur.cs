@@ -9,7 +9,7 @@ class Bulbasaur : Pokemon
     // Method for battle cry
     public override void BattleCry()
     {
-        Console.WriteLine($"{nickname}: Bulbasaur!");
+        Console.WriteLine($"{GetNickname()}: Bulbasaur!");
         //for (int index = 0; index < 10; index++)
         //{
         //    Console.WriteLine($"{nickname}: Bulbasaur!");

@@ -1,0 +1,75 @@
+body {
+    color: white;
+    padding: 5%;
+    align-items: center;
+    background-image: linear-gradient(to bottom right, #7c8cc5,rgb(0, 0, 0),#4fc7d0);  
+    background-attachment: fixed; /*edit*/
+
+}
+footer {
+    width:100%;
+    text-align: center;
+    height: 40px;
+    background-color: #22365e;
+    padding: 0;
+  }
+
+#formulier p {
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+}  
+
+.dropbtn {
+  background-color: #4c6faf;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+#headerImage {
+    height: 100px;
+    width: auto;
+    border-radius: 50%;
+
+}
+input[type=text] {
+    color: white;
+    background-color: #7c8cc5;
+    padding: 5px;
+    border: 1px solid white ;
+    margin: 8px 5px;
+    box-sizing: border-box;
+}
+input[type=submit] {
+    padding: 4px 20px;
+    margin: 20px 5px;
+    color:rgb(52, 47, 134);
+    background-color: white;
+}
+label {
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#formulier h1 {
+    text-align: center;
+    background-color: white;
+    color: rgb(39, 44, 138);
+    font-family:'Times New Roman', Times, serif;
+}
+#formulier {
+    border: 5px solid rgb(105, 121, 201);
+    width: 100%;
+    padding: 5px;
+    background-color: #3a5082;
+}
+.error {
+    color: rgb(0, 238, 255);
+    font-size: 15px;
+    font-family:'Times New Roman', Times, serif;
+}
