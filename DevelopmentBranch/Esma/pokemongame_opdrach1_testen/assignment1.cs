@@ -18,7 +18,7 @@
 
 //    public void battlecry()
 //    {
-//        Console.WriteLine($"{nickname} says: Charmander, char!");
+//        Console.WriteLine($"{nickname} says: Charmander, char");
 //    }
 
 
