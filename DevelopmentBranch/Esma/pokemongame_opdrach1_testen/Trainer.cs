@@ -1,63 +1,43 @@
 ﻿using System;
 using System.Collections.Generic;
 
-public class Trainer
+class Trainer
 {
-    public string Name { get; private set; }
-    private List<Pokeball> belt;
+    private string name;
+    private List<Pokemon> belt;
+    private int nextPokemonIndex;
 
     // constructor
     public Trainer(string name)
     {
-        Name = name;
+        this.name = name;
+        belt = new List<Pokemon>();
+        nextPokemonIndex = 0;
 
-        // list of the belt
-        belt = new List<Pokeball>();
-
-        InitializeBelt();
-    }
-
-
-    private void InitializeBelt()
-    {
-        for (int i = 0; i < 6; i++)
+        // add 6 pokemons to the belt
+        for (int index = 0; index < 6; index++)
         {
-            belt.Add(new Pokeball(false, new Charmander($"Charmander{i + 1}", "Fire", "Water")));
+            belt.AddRange(new Pokemon[] {
+                new Squirtle("Squirtle"),
+                new Charmander("Charmander"),
+                new Bulbasaur("Bulbasaur")
+            });
         }
     }
 
-    // throwing the pokeball
-    public void ThrowPokeball(int index)
+    // method to throw pokeball
+    public void ThrowPokeball()
     {
-        if (index < 0 || index >= belt.Count)
-        {
-            Console.WriteLine("Invalid pokeball index!");
-            return;
-        }
-
-        belt[index].ThrowBall();
+        Console.WriteLine($"Trainer {name} throws a pokeball!");
     }
 
-    // returning the pokeball and closing it
-    public void ReturnPokeball(int index)
+    // method to return next pokemon from belt
+    public Pokemon GetNextPokemon()
     {
-        if (index < 0 || index >= belt.Count)
-        {
-            Console.WriteLine("Invalid pokeball index!");
-            return;
-        }
-
-        belt[index].CloseBall();
+        var nextPokemon = belt[nextPokemonIndex++];
+        nextPokemonIndex %= belt.Count;
+        return nextPokemon;
     }
 
-    public void CapturePokemon(Charmander charmander, int index)
-    {
-        if (index < 0 || index >= belt.Count)
-        {
-            Console.WriteLine("Invalid pokeball index!");
-            return;
-        }
-
-        belt[index].Capture(charmander);
-    }
+    public string GetName() => name;
 }

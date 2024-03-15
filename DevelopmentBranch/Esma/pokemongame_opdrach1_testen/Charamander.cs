@@ -1,39 +1,15 @@
 ﻿using System;
 
-public class Charmander
+class Charmander : Pokemon
 {
-    private string nickname;
-    private string strength;
-    private string weakness;
-
-    // constructor
-    public Charmander(string? nickname, string strength, string weakness)
+    // Constructor
+    public Charmander(string nickname) : base(nickname, "fire", "water")
     {
-        this.nickname = nickname;
-        //this.nickname = nickname ?? throw new ArgumentNullException(nameof(nickname));
-        this.strength = strength;
-        this.weakness = weakness;
     }
 
-    // battlecry
-    public void BattleCryShout()
+    // Method for battle cry
+    public override void BattleCry()
     {
-        Console.WriteLine("Enter a name for your charamander: ");
-        string nickname = Console.ReadLine();
-
-        Console.WriteLine($"{nickname} says: Charmander, char!");
-    }
-    
-
-    public void ChangeTheNickname(string? newNickname)
-    {
-        if (newNickname != null)
-        {
-            this.nickname = newNickname;
-        }
-        else
-        {
-            Console.WriteLine("new nickname can't be null.");
-        }
+        Console.WriteLine($"{nickname} says: Charamander, char!");
     }
 }
