@@ -6,7 +6,7 @@ class Squirtle : Pokemon
     public Squirtle(string nickname) : base(nickname, "water", "leaf")
     {
     }
-
+    
     // Method for battle cry
     public override void BattleCry()
     {

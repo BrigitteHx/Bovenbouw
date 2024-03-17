@@ -14,14 +14,21 @@ class Trainer
         belt = new List<Pokemon>();
         nextPokemonIndex = 0;
 
-        // add 6 pokemons to the belt
+        // Array of all available Pokemon
+        Pokemon[] allPokemon = {
+            new Squirtle("Squirtle"),
+            new Charmander("Charmander"),
+            new Bulbasaur("Bulbasaur")
+            // Add more Pokemon instances if needed
+        };
+
+        Random random = new Random();
+
+        // Add 6 random Pokemon to the belt
         for (int index = 0; index < 6; index++)
         {
-            belt.AddRange(new Pokemon[] {
-                new Squirtle("Squirtle"),
-                new Charmander("Charmander"),
-                new Bulbasaur("Bulbasaur")
-            });
+            Pokemon randomPokemon = allPokemon[random.Next(allPokemon.Length)];
+            belt.Add(randomPokemon);
         }
     }
 
